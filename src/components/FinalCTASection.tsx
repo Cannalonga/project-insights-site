@@ -97,9 +97,9 @@ export function FinalCTASection() {
             </div>
 
             <div className="rounded-[1.5rem] border border-[rgba(21,44,38,0.08)] bg-white/72 px-5 py-4 text-sm leading-6 text-[var(--muted)]">
-              <p>Apos a compra, voce recebera confirmacao do pagamento e instrucoes por email.</p>
+              <p>Apos a compra, voce recebera confirmacao do pagamento.</p>
               <p className="mt-2">
-                Se preferir agilizar, envie o comprovante para:{" "}
+                Para liberar sua licenca rapidamente, envie um email para:{" "}
                 <a
                   href={`mailto:${siteConfig.supportEmail}`}
                   className="font-medium text-[var(--foreground)] hover:text-[var(--accent-strong)]"
@@ -107,6 +107,12 @@ export function FinalCTASection() {
                   {siteConfig.supportEmail}
                 </a>
               </p>
+              <p className="mt-2">com:</p>
+              <ul className="mt-1 space-y-1">
+                <li>- Nome</li>
+                <li>- Plano escolhido</li>
+                <li>- Email para ativacao</li>
+              </ul>
             </div>
           </div>
         </div>
