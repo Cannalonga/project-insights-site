@@ -14,6 +14,9 @@ export function MockupSection() {
             Cada tela prova um tipo de valor: clareza, risco, prioridade, comparacao e capacidade de recuperacao. A
             imagem faz o trabalho pesado. O texto so orienta o olhar.
           </p>
+          <p className="mt-4 text-sm font-medium text-[var(--foreground)]">
+            Validado em uso real com cronogramas de obra
+          </p>
         </div>
 
         <div className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">

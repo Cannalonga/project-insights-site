@@ -5,7 +5,7 @@ const planCards = [
     title: "Trimestral",
     price: "R$297",
     description: "Ideal para comecar rapido e validar o uso no ritmo real da obra.",
-    cta: "Comprar e ativar",
+    cta: "Comprar e ativar agora",
     href: siteConfig.plans.trimestral.buyUrl,
     external: siteConfig.plans.trimestral.hasMercadoPagoUrl,
     tone: "primary",
@@ -78,6 +78,11 @@ export function FinalCTASection() {
                         : "border-[rgba(21,44,38,0.08)] bg-white/88"
                   }`}
                 >
+                  {plan.title === "Trimestral" ? (
+                    <span className="inline-flex rounded-full border border-[rgba(45,93,81,0.16)] bg-[rgba(255,255,255,0.78)] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--accent-strong)]">
+                      Mais usado para comecar
+                    </span>
+                  ) : null}
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">{plan.title}</p>
                   <h3 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-[var(--foreground)]">{plan.price}</h3>
                   <p className="mt-4 min-h-[72px] text-sm leading-6 text-[var(--muted)]">{plan.description}</p>
@@ -97,7 +102,8 @@ export function FinalCTASection() {
             </div>
 
             <div className="rounded-[1.5rem] border border-[rgba(21,44,38,0.08)] bg-white/72 px-5 py-4 text-sm leading-6 text-[var(--muted)]">
-              <p>Liberacao rapida da licenca apos o pagamento.</p>
+              <p>Ativacao simples e suporte direto por email.</p>
+              <p className="mt-2">Liberacao rapida da licenca apos o pagamento.</p>
               <p className="mt-2">
                 Envie um email para:{" "}
                 <a

@@ -31,7 +31,10 @@ export function HeroSection() {
               O Project Insights transforma cronogramas em leitura executiva clara, mostra riscos reais, compara
               versoes e leva voce direto para a decisao, sem navegar tarefa por tarefa.
             </p>
-            <p className="mt-4 text-base font-medium text-[var(--foreground)]">Leitura pronta em minutos para sua reuniao de obra.</p>
+            <p className="mt-4 text-sm font-medium uppercase tracking-[0.18em] text-[var(--muted)]">
+              Para engenheiros e planejadores de obra
+            </p>
+            <p className="mt-3 text-base font-medium text-[var(--foreground)]">Leitura pronta para sua reuniao em minutos.</p>
 
             <div className="mt-3 grid gap-2 text-sm font-semibold sm:grid-cols-3">
               <div className="rounded-[1rem] border border-[rgba(45,93,81,0.16)] bg-[rgba(238,240,227,0.9)] px-4 py-3 text-[var(--accent-strong)]">
@@ -63,6 +66,9 @@ export function HeroSection() {
                 Comprar licenca
               </a>
             </div>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-[var(--muted)]">
+              Aplicativo desktop leve, sem instalacao complexa.
+            </p>
 
             <p className="mt-5 max-w-2xl text-sm leading-6 text-[var(--muted)]">
               Plano trimestral como entrada mais direta. Opcoes semestrais e anuais para quem quer mais continuidade.
