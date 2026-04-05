@@ -1,25 +1,99 @@
+import { siteConfig } from "@/lib/site-config";
+
+const planCards = [
+  {
+    title: "Trimestral",
+    price: "R$297",
+    description: "Ideal para comecar rapido e validar o uso no ritmo real da obra.",
+    cta: "Comprar trimestral",
+    href: siteConfig.plans.trimestral.buyUrl,
+    external: siteConfig.plans.trimestral.hasMercadoPagoUrl,
+    tone: "primary",
+  },
+  {
+    title: "Semestral",
+    price: "R$537",
+    description: "Mais continuidade para acompanhar ciclos com mais previsibilidade.",
+    cta: "Comprar semestral",
+    href: siteConfig.plans.semestral.buyUrl,
+    external: siteConfig.plans.semestral.hasMercadoPagoUrl,
+    tone: "secondary",
+  },
+  {
+    title: "Anual",
+    price: "R$997",
+    description: "Melhor custo para quem ja decidiu incorporar a leitura executiva a rotina.",
+    cta: "Comprar anual",
+    href: siteConfig.plans.anual.buyUrl,
+    external: siteConfig.plans.anual.hasMercadoPagoUrl,
+    tone: "premium",
+  },
+];
+
 export function FinalCTASection() {
   return (
-    <section id="cta-final" className="section-shell py-20">
-      <div className="section-card bg-[linear-gradient(135deg,rgba(47,93,80,0.08),rgba(255,255,255,0.92))] px-6 py-10 sm:px-8 lg:px-10 lg:py-12">
-        <div className="max-w-3xl">
-          <p className="eyebrow">Próximo passo</p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Leve cronogramas para uma leitura executiva que já nasce pronta para decisão.
-          </h2>
-          <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-            Se você quer entender mais rápido o que está acontecendo no projeto e reduzir o esforço de interpretação
-            manual, o Project Insights foi feito para isso.
-          </p>
-        </div>
+    <section id="oferta" className="section-shell py-22">
+      <div className="section-card bg-[linear-gradient(135deg,rgba(45,93,81,0.09),rgba(255,255,255,0.94))] px-6 py-10 sm:px-8 lg:px-10 lg:py-12">
+        <div className="grid gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
+          <div className="max-w-2xl">
+            <p className="eyebrow">Fechamento</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">
+              Escolha seu plano e comece agora
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
+              Baixe a demo ou avance direto para a licenca completa. Escolha o ciclo que melhor acompanha sua operacao e
+              finalize a compra pelo plano desejado.
+            </p>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <a href="#topo" className="primary-button">
-            Quero conhecer o Project Insights
-          </a>
-          <a href="mailto:contato@vitrineweb.online" className="secondary-button">
-            Solicitar acesso
-          </a>
+            <div className="mt-6 grid gap-3 text-base text-[var(--foreground)]">
+              <div className="rounded-[1.5rem] border border-[rgba(49,95,132,0.12)] bg-[linear-gradient(180deg,rgba(255,255,255,0.84),rgba(232,240,247,0.72))] p-5 shadow-[0_12px_24px_rgba(15,32,28,0.05)]">
+                <strong>Versao demo</strong>
+                <p className="mt-2 leading-7 text-[var(--muted)]">
+                  Mostra a leitura acontecendo e ajuda voce a validar se o produto faz sentido para sua rotina.
+                </p>
+              </div>
+              <div className="rounded-[1.5rem] border border-[rgba(45,93,81,0.12)] bg-[linear-gradient(180deg,rgba(255,255,255,0.84),rgba(238,240,227,0.86))] p-5 shadow-[0_12px_24px_rgba(15,32,28,0.05)]">
+                <strong>Licenca completa</strong>
+                <p className="mt-2 leading-7 text-[var(--muted)]">
+                  Libera a leitura completa, o PDF executivo e o uso recorrente com mais seguranca na decisao.
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-6 text-sm leading-6 text-[var(--muted)]">
+              Sem fidelidade. Renove de acordo com a necessidade da operacao.
+            </p>
+          </div>
+
+          <div id="cta-final" className="grid gap-4 lg:grid-cols-3">
+            {planCards.map((plan) => (
+              <article
+                key={plan.title}
+                className={`rounded-[1.9rem] border p-6 shadow-[0_26px_58px_rgba(15,32,28,0.1)] ${
+                  plan.tone === "primary"
+                    ? "border-[rgba(45,93,81,0.16)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(238,240,227,0.92))]"
+                    : plan.tone === "secondary"
+                      ? "border-[rgba(49,95,132,0.12)] bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(232,240,247,0.78))]"
+                      : "border-[rgba(21,44,38,0.08)] bg-white/88"
+                }`}
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">{plan.title}</p>
+                <h3 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-[var(--foreground)]">{plan.price}</h3>
+                <p className="mt-4 min-h-[72px] text-sm leading-6 text-[var(--muted)]">{plan.description}</p>
+
+                <div className="mt-6">
+                  <a
+                    href={plan.href}
+                    className={`${plan.tone === "primary" ? "primary-button" : "secondary-button"} w-full`}
+                    target={plan.external ? "_blank" : undefined}
+                    rel={plan.external ? "noreferrer" : undefined}
+                  >
+                    {plan.cta}
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

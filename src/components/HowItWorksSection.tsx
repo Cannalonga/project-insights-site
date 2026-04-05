@@ -1,15 +1,15 @@
 const steps = [
   {
     title: "Carregue o arquivo MPP",
-    description: "Abra o cronograma no aplicativo e selecione o arquivo do Microsoft Project para leitura.",
+    description: "Abra o cronograma no app e escolha o arquivo para leitura.",
   },
   {
-    title: "Gere a leitura executiva",
-    description: "O Project Insights resume situação, risco, comparação e pontos críticos de forma direta.",
+    title: "Receba a leitura executiva",
+    description: "O Project Insights mostra status, risco, comparacao e onde agir com muito menos ruido.",
   },
   {
-    title: "Aja com base no diagnóstico",
-    description: "Leve a leitura para reunião, acompanhamento ou tomada de decisão com muito menos ruído.",
+    title: "Leve para a reuniao",
+    description: "Use a leitura para alinhar acao, prioridade e proximo passo com mais seguranca.",
   },
 ];
 
@@ -19,7 +19,7 @@ export function HowItWorksSection() {
       <div className="section-card px-6 py-8 sm:px-8 lg:px-10">
         <p className="eyebrow">Como funciona</p>
         <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Três passos para sair do arquivo e chegar na decisão.
+          Tres passos para sair do arquivo e chegar na decisao.
         </h2>
 
         <div className="mt-10 grid gap-4 lg:grid-cols-3">

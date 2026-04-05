@@ -17,10 +17,10 @@ export default function Home() {
         <HeroSection />
         <ProblemSection />
         <SolutionSection />
-        <FeatureSection />
-        <HowItWorksSection />
-        <DifferentialsSection />
         <MockupSection />
+        <DifferentialsSection />
+        <HowItWorksSection />
+        <FeatureSection />
         <FinalCTASection />
       </main>
       <Footer />

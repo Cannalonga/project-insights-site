@@ -1,84 +1,123 @@
+import { LandingImage } from "@/components/LandingImage";
+import { landingAssets } from "@/lib/landing-assets";
+import { siteConfig } from "@/lib/site-config";
+
+const heroSignals = [
+  { value: "Clareza rapida", label: "para chegar na reuniao sabendo onde agir" },
+  { value: "Comparacao clara", label: "para mostrar o que mudou entre versoes" },
+  { value: "Uso profissional", label: "com demo e licenca completa" },
+];
+
 export function HeroSection() {
   return (
-    <section id="topo" className="section-shell pt-8 pb-20 sm:pt-12 sm:pb-24">
-      <div className="section-card overflow-hidden px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="max-w-3xl">
-            <p className="eyebrow">Leitura executiva de cronogramas MPP</p>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[var(--foreground)] sm:text-5xl lg:text-6xl lg:leading-[1.05]">
-              Transforme cronogramas MPP em leitura executiva clara, acionável e pronta para decisão.
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]">
-              O Project Insights converte cronogramas do Microsoft Project em diagnóstico executivo, comparação entre
-              versões, ação prioritária e PDF pronto para análise profissional.
-            </p>
+    <section id="topo" className="section-shell pt-10 pb-22 sm:pt-14 sm:pb-26">
+      <div className="section-card relative overflow-hidden px-6 py-8 sm:px-8 lg:px-10 lg:py-12">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top_left,rgba(45,93,81,0.16),transparent_58%)]" />
+        <div className="pointer-events-none absolute -right-18 top-16 h-56 w-56 rounded-full bg-[rgba(231,239,231,0.72)] blur-3xl" />
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href="#cta-final" className="primary-button">
-                Solicitar acesso
+        <div className="relative grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center rounded-full border border-[rgba(45,93,81,0.14)] bg-white/80 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--muted)] shadow-[0_8px_18px_rgba(15,32,28,0.05)]">
+              Desktop offline para leitura executiva de cronogramas MPP
+            </div>
+
+            <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-[-0.045em] text-[var(--foreground)] sm:text-5xl lg:text-[4.4rem] lg:leading-[0.96]">
+              LEITURA EXECUTIVA DE CRONOGRAMAS MPP
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)] sm:text-[1.15rem]">
+              Pare de abrir o MPP para tentar descobrir sozinho onde o projeto travou.
+            </p>
+            <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--muted)] sm:text-[1.08rem]">
+              O Project Insights transforma cronogramas em leitura executiva clara, mostra riscos reais, compara
+              versoes e leva voce direto para a decisao, sem navegar tarefa por tarefa.
+            </p>
+            <p className="mt-4 text-base font-medium text-[var(--foreground)]">Leitura pronta em minutos para sua reuniao de obra.</p>
+
+            <div className="mt-3 grid gap-2 text-sm font-semibold sm:grid-cols-3">
+              <div className="rounded-[1rem] border border-[rgba(45,93,81,0.16)] bg-[rgba(238,240,227,0.9)] px-4 py-3 text-[var(--accent-strong)]">
+                Trimestral — R$297
+              </div>
+              <div className="rounded-[1rem] border border-[rgba(49,95,132,0.12)] bg-[rgba(255,255,255,0.78)] px-4 py-3 text-[var(--analysis)]">
+                Semestral — R$537
+              </div>
+              <div className="rounded-[1rem] border border-[rgba(21,44,38,0.08)] bg-[rgba(255,255,255,0.78)] px-4 py-3 text-[var(--foreground)]">
+                Anual — R$997
+              </div>
+            </div>
+
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a href={siteConfig.demoDownloadUrl} className="primary-button min-w-[220px]" download>
+                Baixar versao demo
               </a>
-              <a href="#como-funciona" className="secondary-button">
-                Ver como funciona
+              <a
+                href={siteConfig.buyUrl}
+                className="secondary-button min-w-[220px]"
+                target={siteConfig.hasMercadoPagoUrl ? "_blank" : undefined}
+                rel={siteConfig.hasMercadoPagoUrl ? "noreferrer" : undefined}
+              >
+                Comprar licenca
               </a>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-3 text-sm text-[var(--muted)]">
-              <span className="rounded-full border border-[var(--border)] bg-white/70 px-4 py-2">Desktop local</span>
-              <span className="rounded-full border border-[var(--border)] bg-white/70 px-4 py-2">Funciona offline</span>
-              <span className="rounded-full border border-[var(--border)] bg-white/70 px-4 py-2">Pronto para reuniões</span>
+            <p className="mt-5 max-w-2xl text-sm leading-6 text-[var(--muted)]">
+              Plano trimestral como entrada mais direta. Opcoes semestrais e anuais para quem quer mais continuidade.
+            </p>
+
+            <div className="mt-8 grid gap-3 sm:grid-cols-3">
+              {heroSignals.map((signal, index) => (
+                <div
+                  key={signal.value}
+                  className={`rounded-[1.35rem] border p-4 shadow-[0_12px_24px_rgba(15,32,28,0.05)] ${
+                    index === 0
+                      ? "border-[rgba(45,93,81,0.14)] bg-[rgba(255,255,255,0.86)]"
+                      : "border-[var(--border)] bg-[rgba(255,255,255,0.72)]"
+                  }`}
+                >
+                  <p className="text-sm font-semibold text-[var(--foreground)]">{signal.value}</p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{signal.label}</p>
+                </div>
+              ))}
             </div>
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-[rgba(47,93,80,0.12)] via-transparent to-[rgba(210,220,196,0.34)] blur-2xl" />
-            <div className="relative rounded-[2rem] border border-[var(--border)] bg-[#f9faf5] p-5 shadow-[0_24px_60px_rgba(19,37,32,0.12)]">
+            <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-[rgba(45,93,81,0.18)] via-transparent to-[rgba(210,220,196,0.3)] blur-2xl" />
+            <div className="relative rounded-[2rem] border border-[rgba(21,44,38,0.08)] bg-[var(--surface-strong)] p-5 shadow-[0_28px_70px_rgba(15,32,28,0.14)]">
               <div className="flex items-center justify-between border-b border-[var(--border)] pb-4">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">Preview</p>
-                  <h2 className="mt-2 text-xl font-semibold">Painel executivo do projeto</h2>
+                  <h2 className="mt-2 text-xl font-semibold">Leitura executiva do projeto</h2>
                 </div>
                 <span className="rounded-full bg-[var(--soft)] px-3 py-1 text-xs font-semibold text-[var(--accent-strong)]">
-                  Projeto completo
+                  Desktop
                 </span>
               </div>
 
-              <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                <div className="mock-panel">
-                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Status geral</p>
-                  <p className="mt-3 text-3xl font-semibold">Atenção</p>
-                  <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
-                    Cronograma abaixo do ritmo esperado, com necessidade de resposta imediata nas frentes críticas.
-                  </p>
+              <div className="mt-5 overflow-hidden rounded-[1.5rem] border border-[var(--border)] bg-white shadow-[0_18px_36px_rgba(15,32,28,0.08)]">
+                <LandingImage
+                  src={landingAssets.heroPreview}
+                  alt="Tela principal do Project Insights com leitura executiva simplificada do cronograma"
+                  className="aspect-[16/9] w-full"
+                />
+              </div>
+
+              <div className="mt-4 grid gap-3 sm:grid-cols-3">
+                <div className="rounded-2xl border border-[rgba(21,44,38,0.06)] bg-white p-4 shadow-[0_10px_20px_rgba(15,32,28,0.04)]">
+                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Problema</p>
+                  <p className="mt-2 text-base font-semibold">Onde o projeto pede acao</p>
                 </div>
-                <div className="mock-panel">
-                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Ação prioritária</p>
-                  <p className="mt-3 text-lg font-semibold">3.2.4 - Montagem final</p>
-                  <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
-                    Maior alavanca de avanço no curto prazo e impacto direto na recuperação do cronograma.
-                  </p>
+                <div className="rounded-2xl border border-[rgba(21,44,38,0.06)] bg-white p-4 shadow-[0_10px_20px_rgba(15,32,28,0.04)]">
+                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Evolucao</p>
+                  <p className="mt-2 text-base font-semibold">O que mudou entre versoes</p>
                 </div>
-                <div className="mock-panel sm:col-span-2">
-                  <div className="flex items-center justify-between">
-                    <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Comparação entre versões</p>
-                    <span className="rounded-full bg-[var(--warm)] px-3 py-1 text-xs font-semibold text-[var(--accent-strong)]">
-                      Gap 8,4%
-                    </span>
-                  </div>
-                  <div className="mt-4 grid gap-3 sm:grid-cols-3">
-                    <div className="rounded-2xl bg-white p-4">
-                      <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Base</p>
-                      <p className="mt-2 text-2xl font-semibold">62%</p>
-                    </div>
-                    <div className="rounded-2xl bg-white p-4">
-                      <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Atual</p>
-                      <p className="mt-2 text-2xl font-semibold">70,4%</p>
-                    </div>
-                    <div className="rounded-2xl bg-white p-4">
-                      <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">PDF executivo</p>
-                      <p className="mt-2 text-base font-semibold">Pronto para distribuição</p>
-                    </div>
-                  </div>
+                <div className="rounded-2xl border border-[rgba(21,44,38,0.06)] bg-white p-4 shadow-[0_10px_20px_rgba(15,32,28,0.04)]">
+                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Saida</p>
+                  <p className="mt-2 text-base font-semibold">PDF executivo pronto para compartilhar</p>
                 </div>
+              </div>
+
+              <div className="mt-4 rounded-2xl border border-[rgba(45,93,81,0.08)] bg-[var(--warm)] p-4 text-sm leading-6 text-[var(--foreground)]">
+                A demo mostra a leitura acontecendo. A licenca completa leva essa clareza para a reuniao e para a decisao.
               </div>
             </div>
           </div>
