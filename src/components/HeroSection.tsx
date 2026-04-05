@@ -46,7 +46,12 @@ export function HeroSection() {
             </div>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <a href={siteConfig.demoDownloadUrl} className="primary-button min-w-[220px]" download>
+              <a
+                href={siteConfig.demoDownloadUrl}
+                className="primary-button min-w-[220px]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Baixar versao demo
               </a>
               <a

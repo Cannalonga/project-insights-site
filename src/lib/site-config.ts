@@ -1,7 +1,10 @@
 const supportEmail = "canna.vendasonline@gmail.com";
 
-const demoDownloadUrl =
-  process.env.NEXT_PUBLIC_PROJECT_INSIGHTS_DEMO_URL?.trim() || "/downloads/project-insights-demo-setup.exe";
+export const download = {
+  demoUrl:
+    process.env.NEXT_PUBLIC_PROJECT_INSIGHTS_DEMO_URL?.trim() ||
+    "https://github.com/Cannalonga/project-insights-desktop/releases/download/v0.1.0/Project.Insights_v0.1.0_x64-setup.exe",
+} as const;
 
 export const mercadoPago = {
   trimestralUrl: "https://mpago.la/2q4KHpK",
@@ -15,7 +18,7 @@ const buildPlanFallback = (planLabel: string) =>
 const resolvePurchaseUrl = (url: string | undefined, planLabel: string) => url?.trim() || buildPlanFallback(planLabel);
 
 export const siteConfig = {
-  demoDownloadUrl,
+  demoDownloadUrl: download.demoUrl,
   supportEmail,
   plans: {
     trimestral: {
