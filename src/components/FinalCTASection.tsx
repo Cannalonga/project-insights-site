@@ -5,7 +5,7 @@ const planCards = [
     title: "Trimestral",
     price: "R$297",
     description: "Ideal para comecar rapido e validar o uso no ritmo real da obra.",
-    cta: "Comprar trimestral",
+    cta: "Comprar e ativar",
     href: siteConfig.plans.trimestral.buyUrl,
     external: siteConfig.plans.trimestral.hasMercadoPagoUrl,
     tone: "primary",
@@ -97,9 +97,9 @@ export function FinalCTASection() {
             </div>
 
             <div className="rounded-[1.5rem] border border-[rgba(21,44,38,0.08)] bg-white/72 px-5 py-4 text-sm leading-6 text-[var(--muted)]">
-              <p>Apos a compra, voce recebera confirmacao do pagamento.</p>
+              <p>Liberacao rapida da licenca apos o pagamento.</p>
               <p className="mt-2">
-                Para liberar sua licenca rapidamente, envie um email para:{" "}
+                Envie um email para:{" "}
                 <a
                   href={`mailto:${siteConfig.supportEmail}`}
                   className="font-medium text-[var(--foreground)] hover:text-[var(--accent-strong)]"
