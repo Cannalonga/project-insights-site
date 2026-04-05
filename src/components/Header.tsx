@@ -34,8 +34,8 @@ export function Header() {
           <a
             href={siteConfig.buyUrl}
             className="primary-button px-5 py-2.5"
-            target={siteConfig.hasMercadoPagoUrl ? "_blank" : undefined}
-            rel={siteConfig.hasMercadoPagoUrl ? "noreferrer" : undefined}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Comprar licenca
           </a>

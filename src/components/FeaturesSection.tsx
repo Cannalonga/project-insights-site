@@ -78,8 +78,8 @@ export function FeatureSection() {
                   <a
                     href={plan.href}
                     className="primary-button min-w-[200px]"
-                    target={plan.external ? "_blank" : undefined}
-                    rel={plan.external ? "noreferrer" : undefined}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {plan.cta}
                   </a>

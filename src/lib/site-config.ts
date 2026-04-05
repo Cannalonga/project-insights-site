@@ -1,14 +1,18 @@
-const supportEmail = "contato@vitrineweb.online";
+const supportEmail = "canna.vendasonline@gmail.com";
 
 const demoDownloadUrl =
   process.env.NEXT_PUBLIC_PROJECT_INSIGHTS_DEMO_URL?.trim() || "/downloads/project-insights-demo-setup.exe";
 
-const trimestralUrl = process.env.NEXT_PUBLIC_PROJECT_INSIGHTS_MP_TRIMESTRAL_URL?.trim() ?? "";
-const semestralUrl = process.env.NEXT_PUBLIC_PROJECT_INSIGHTS_MP_SEMESTRAL_URL?.trim() ?? "";
-const anualUrl = process.env.NEXT_PUBLIC_PROJECT_INSIGHTS_MP_ANUAL_URL?.trim() ?? "";
+export const mercadoPago = {
+  trimestralUrl: "https://mpago.la/2q4KHpK",
+  semestralUrl: "https://mpago.la/2Si7zyt",
+  anualUrl: "https://mpago.la/2EcEoPp",
+} as const;
 
 const buildPlanFallback = (planLabel: string) =>
   `mailto:${supportEmail}?subject=${encodeURIComponent(`Comprar licença ${planLabel} Project Insights`)}`;
+
+const resolvePurchaseUrl = (url: string | undefined, planLabel: string) => url?.trim() || buildPlanFallback(planLabel);
 
 export const siteConfig = {
   demoDownloadUrl,
@@ -16,20 +20,20 @@ export const siteConfig = {
   plans: {
     trimestral: {
       price: "R$297",
-      buyUrl: trimestralUrl || buildPlanFallback("trimestral"),
-      hasMercadoPagoUrl: trimestralUrl.length > 0,
+      buyUrl: resolvePurchaseUrl(mercadoPago.trimestralUrl, "trimestral"),
+      hasMercadoPagoUrl: Boolean(mercadoPago.trimestralUrl?.trim()),
     },
     semestral: {
       price: "R$537",
-      buyUrl: semestralUrl || buildPlanFallback("semestral"),
-      hasMercadoPagoUrl: semestralUrl.length > 0,
+      buyUrl: resolvePurchaseUrl(mercadoPago.semestralUrl, "semestral"),
+      hasMercadoPagoUrl: Boolean(mercadoPago.semestralUrl?.trim()),
     },
     anual: {
       price: "R$997",
-      buyUrl: anualUrl || buildPlanFallback("anual"),
-      hasMercadoPagoUrl: anualUrl.length > 0,
+      buyUrl: resolvePurchaseUrl(mercadoPago.anualUrl, "anual"),
+      hasMercadoPagoUrl: Boolean(mercadoPago.anualUrl?.trim()),
     },
   },
-  buyUrl: trimestralUrl || buildPlanFallback("trimestral"),
-  hasMercadoPagoUrl: trimestralUrl.length > 0,
+  buyUrl: resolvePurchaseUrl(mercadoPago.trimestralUrl, "trimestral"),
+  hasMercadoPagoUrl: Boolean(mercadoPago.trimestralUrl?.trim()),
 };

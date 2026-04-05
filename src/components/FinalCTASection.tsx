@@ -85,8 +85,8 @@ export function FinalCTASection() {
                   <a
                     href={plan.href}
                     className={`${plan.tone === "primary" ? "primary-button" : "secondary-button"} w-full`}
-                    target={plan.external ? "_blank" : undefined}
-                    rel={plan.external ? "noreferrer" : undefined}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {plan.cta}
                   </a>

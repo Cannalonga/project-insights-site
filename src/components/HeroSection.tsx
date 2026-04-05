@@ -52,8 +52,8 @@ export function HeroSection() {
               <a
                 href={siteConfig.buyUrl}
                 className="secondary-button min-w-[220px]"
-                target={siteConfig.hasMercadoPagoUrl ? "_blank" : undefined}
-                rel={siteConfig.hasMercadoPagoUrl ? "noreferrer" : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Comprar licenca
               </a>
