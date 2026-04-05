@@ -65,34 +65,49 @@ export function FinalCTASection() {
             </p>
           </div>
 
-          <div id="cta-final" className="grid gap-4 lg:grid-cols-3">
-            {planCards.map((plan) => (
-              <article
-                key={plan.title}
-                className={`rounded-[1.9rem] border p-6 shadow-[0_26px_58px_rgba(15,32,28,0.1)] ${
-                  plan.tone === "primary"
-                    ? "border-[rgba(45,93,81,0.16)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(238,240,227,0.92))]"
-                    : plan.tone === "secondary"
-                      ? "border-[rgba(49,95,132,0.12)] bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(232,240,247,0.78))]"
-                      : "border-[rgba(21,44,38,0.08)] bg-white/88"
-                }`}
-              >
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">{plan.title}</p>
-                <h3 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-[var(--foreground)]">{plan.price}</h3>
-                <p className="mt-4 min-h-[72px] text-sm leading-6 text-[var(--muted)]">{plan.description}</p>
+          <div id="cta-final" className="space-y-5">
+            <div className="grid gap-4 lg:grid-cols-3">
+              {planCards.map((plan) => (
+                <article
+                  key={plan.title}
+                  className={`rounded-[1.9rem] border p-6 shadow-[0_26px_58px_rgba(15,32,28,0.1)] ${
+                    plan.tone === "primary"
+                      ? "border-[rgba(45,93,81,0.16)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(238,240,227,0.92))]"
+                      : plan.tone === "secondary"
+                        ? "border-[rgba(49,95,132,0.12)] bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(232,240,247,0.78))]"
+                        : "border-[rgba(21,44,38,0.08)] bg-white/88"
+                  }`}
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">{plan.title}</p>
+                  <h3 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-[var(--foreground)]">{plan.price}</h3>
+                  <p className="mt-4 min-h-[72px] text-sm leading-6 text-[var(--muted)]">{plan.description}</p>
 
-                <div className="mt-6">
-                  <a
-                    href={plan.href}
-                    className={`${plan.tone === "primary" ? "primary-button" : "secondary-button"} w-full`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {plan.cta}
-                  </a>
-                </div>
-              </article>
-            ))}
+                  <div className="mt-6">
+                    <a
+                      href={plan.href}
+                      className={`${plan.tone === "primary" ? "primary-button" : "secondary-button"} w-full`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {plan.cta}
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <div className="rounded-[1.5rem] border border-[rgba(21,44,38,0.08)] bg-white/72 px-5 py-4 text-sm leading-6 text-[var(--muted)]">
+              <p>Apos a compra, voce recebera confirmacao do pagamento e instrucoes por email.</p>
+              <p className="mt-2">
+                Se preferir agilizar, envie o comprovante para:{" "}
+                <a
+                  href={`mailto:${siteConfig.supportEmail}`}
+                  className="font-medium text-[var(--foreground)] hover:text-[var(--accent-strong)]"
+                >
+                  {siteConfig.supportEmail}
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
