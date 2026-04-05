@@ -34,7 +34,12 @@ export function HeroSection() {
             <p className="mt-4 text-sm font-medium uppercase tracking-[0.18em] text-[var(--muted)]">
               Para engenheiros e planejadores de obra
             </p>
-            <p className="mt-3 text-base font-medium text-[var(--foreground)]">Leitura pronta para sua reuniao em minutos.</p>
+            <p className="mt-3 text-base font-medium text-[var(--foreground)]">
+              Leve uma decisao pronta para a reuniao em minutos
+            </p>
+            <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+              Identifique atrasos, riscos e decisoes em segundos
+            </p>
 
             <div className="mt-3 grid gap-2 text-sm font-semibold sm:grid-cols-3">
               <div className="rounded-[1rem] border border-[rgba(45,93,81,0.16)] bg-[rgba(238,240,227,0.9)] px-4 py-3 text-[var(--accent-strong)]">
@@ -67,7 +72,7 @@ export function HeroSection() {
               </a>
             </div>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-[var(--muted)]">
-              Aplicativo desktop leve, sem instalacao complexa.
+              Aplicativo leve, instalacao simples em poucos cliques.
             </p>
 
             <p className="mt-5 max-w-2xl text-sm leading-6 text-[var(--muted)]">

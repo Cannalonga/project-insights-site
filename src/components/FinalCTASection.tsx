@@ -80,7 +80,7 @@ export function FinalCTASection() {
                 >
                   {plan.title === "Trimestral" ? (
                     <span className="inline-flex rounded-full border border-[rgba(45,93,81,0.16)] bg-[rgba(255,255,255,0.78)] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--accent-strong)]">
-                      Mais usado para comecar
+                      Mais usado para começar
                     </span>
                   ) : null}
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">{plan.title}</p>
@@ -102,6 +102,7 @@ export function FinalCTASection() {
             </div>
 
             <div className="rounded-[1.5rem] border border-[rgba(21,44,38,0.08)] bg-white/72 px-5 py-4 text-sm leading-6 text-[var(--muted)]">
+              <p>Sem contrato, ativacao imediata.</p>
               <p>Ativacao simples e suporte direto por email.</p>
               <p className="mt-2">Liberacao rapida da licenca apos o pagamento.</p>
               <p className="mt-2">

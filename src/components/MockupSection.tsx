@@ -15,7 +15,7 @@ export function MockupSection() {
             imagem faz o trabalho pesado. O texto so orienta o olhar.
           </p>
           <p className="mt-4 text-sm font-medium text-[var(--foreground)]">
-            Validado em uso real com cronogramas de obra
+            Validado com cronogramas reais de obra e uso em campo
           </p>
         </div>
 
