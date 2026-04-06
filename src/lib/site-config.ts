@@ -3,7 +3,7 @@ const supportEmail = "canna.vendasonline@gmail.com";
 export const download = {
   demoUrl:
     process.env.NEXT_PUBLIC_PROJECT_INSIGHTS_DEMO_URL?.trim() ||
-    "https://github.com/Cannalonga/project-insights-desktop/releases/download/v0.1.0/Project_Insights_0.1.0_x64-setup.exe",
+    "https://github.com/Cannalonga/project-insights-desktop/releases/download/v0.1.0/Project.Insights_v0.1.0_x64-setup.exe",
 } as const;
 
 export const mercadoPago = {
