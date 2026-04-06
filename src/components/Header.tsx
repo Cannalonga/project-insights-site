@@ -2,10 +2,10 @@ import { siteConfig } from "@/lib/site-config";
 
 const navItems = [
   { label: "Problema", href: "#problema" },
-  { label: "Solucao", href: "#solucao" },
-  { label: "Demonstracao", href: "#demonstracao" },
+  { label: "Solução", href: "#solucao" },
+  { label: "Demonstração", href: "#demonstracao" },
   { label: "Como funciona", href: "#como-funciona" },
-  { label: "Licenca", href: "#oferta" },
+  { label: "Licença", href: "#oferta" },
 ];
 
 export function Header() {
@@ -34,7 +34,7 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Baixar versao demo
+            Baixar versão demo
           </a>
           <a
             href={siteConfig.buyUrl}
@@ -42,7 +42,7 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Comprar licenca
+            Comprar licença
           </a>
         </div>
       </div>

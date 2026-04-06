@@ -3,18 +3,18 @@ const beforeAfter = [
     title: "Antes",
     tone: "muted",
     items: [
-      "Abrir o MPP e tentar entender o cenario manualmente.",
-      "Montar a reuniao com leitura espalhada em varias telas.",
-      "Perder tempo para descobrir risco, prioridade e proximo passo.",
+      "Abrir o MPP e tentar entender o cenário manualmente.",
+      "Montar a reunião com leitura espalhada em várias telas.",
+      "Perder tempo para descobrir risco, prioridade e próximo passo.",
     ],
   },
   {
     title: "Depois",
     tone: "accent",
     items: [
-      "Chegar na reuniao com uma leitura clara de status, risco e prioridade.",
-      "Mostrar o que mudou entre versoes sem interpretacao demorada.",
-      "Saber onde agir com mais seguranca.",
+      "Chegar na reunião com uma leitura clara de status, risco e prioridade.",
+      "Mostrar o que mudou entre versões sem interpretação demorada.",
+      "Saber onde agir com mais segurança.",
     ],
   },
 ];
@@ -26,10 +26,10 @@ export function DifferentialsSection() {
         <div className="max-w-xl">
           <p className="eyebrow">Antes vs depois</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">
-            O ganho nao e so analisar. E decidir com clareza.
+            O ganho não é só analisar. É decidir com clareza.
           </h2>
           <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-            O Project Insights reduz o tempo entre abrir o cronograma e entrar na reuniao sabendo o que importa.
+            O Project Insights reduz o tempo entre abrir o cronograma e entrar na reunião sabendo o que importa.
           </p>
         </div>
 

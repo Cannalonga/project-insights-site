@@ -4,7 +4,7 @@ const planCards = [
   {
     title: "Trimestral",
     price: "R$297",
-    description: "Ideal para comecar rapido e validar o uso no ritmo real da obra.",
+    description: "Ideal para começar rápido e validar o uso no ritmo real da obra.",
     cta: "Comprar e ativar agora",
     href: siteConfig.plans.trimestral.buyUrl,
     external: siteConfig.plans.trimestral.hasMercadoPagoUrl,
@@ -22,7 +22,7 @@ const planCards = [
   {
     title: "Anual",
     price: "R$997",
-    description: "Melhor custo para quem ja decidiu incorporar a leitura executiva a rotina.",
+    description: "Melhor custo para quem já decidiu incorporar a leitura executiva à rotina.",
     cta: "Comprar anual",
     href: siteConfig.plans.anual.buyUrl,
     external: siteConfig.plans.anual.hasMercadoPagoUrl,
@@ -41,27 +41,27 @@ export function FinalCTASection() {
               Escolha seu plano e comece agora
             </h2>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-              Baixe a demo ou avance direto para a licenca completa. Escolha o ciclo que melhor acompanha sua operacao e
+              Baixe a demo ou avance direto para a licença completa. Escolha o ciclo que melhor acompanha sua operação e
               finalize a compra pelo plano desejado.
             </p>
 
             <div className="mt-6 grid gap-3 text-base text-[var(--foreground)]">
               <div className="rounded-[1.5rem] border border-[rgba(49,95,132,0.12)] bg-[linear-gradient(180deg,rgba(255,255,255,0.84),rgba(232,240,247,0.72))] p-5 shadow-[0_12px_24px_rgba(15,32,28,0.05)]">
-                <strong>Versao demo</strong>
+                <strong>Versão demo</strong>
                 <p className="mt-2 leading-7 text-[var(--muted)]">
-                  Mostra a leitura acontecendo e ajuda voce a validar se o produto faz sentido para sua rotina.
+                  Mostra a leitura acontecendo e ajuda você a validar se o produto faz sentido para sua rotina.
                 </p>
               </div>
               <div className="rounded-[1.5rem] border border-[rgba(45,93,81,0.12)] bg-[linear-gradient(180deg,rgba(255,255,255,0.84),rgba(238,240,227,0.86))] p-5 shadow-[0_12px_24px_rgba(15,32,28,0.05)]">
-                <strong>Licenca completa</strong>
+                <strong>Licença completa</strong>
                 <p className="mt-2 leading-7 text-[var(--muted)]">
-                  Libera a leitura completa, o PDF executivo e o uso recorrente com mais seguranca na decisao.
+                  Libera a leitura completa, o PDF executivo e o uso recorrente com mais segurança na decisão.
                 </p>
               </div>
             </div>
 
             <p className="mt-6 text-sm leading-6 text-[var(--muted)]">
-              Sem fidelidade. Renove de acordo com a necessidade da operacao.
+              Sem fidelidade. Renove de acordo com a necessidade da operação.
             </p>
           </div>
 
@@ -102,9 +102,9 @@ export function FinalCTASection() {
             </div>
 
             <div className="rounded-[1.5rem] border border-[rgba(21,44,38,0.08)] bg-white/72 px-5 py-4 text-sm leading-6 text-[var(--muted)]">
-              <p>Sem contrato, ativacao imediata.</p>
-              <p>Ativacao simples e suporte direto por email.</p>
-              <p className="mt-2">Liberacao rapida da licenca apos o pagamento.</p>
+              <p>Sem contrato, ativação imediata.</p>
+              <p>Ativação simples e suporte direto por email.</p>
+              <p className="mt-2">Liberação rápida da licença após o pagamento.</p>
               <p className="mt-2">
                 Envie um email para:{" "}
                 <a
@@ -118,7 +118,7 @@ export function FinalCTASection() {
               <ul className="mt-1 space-y-1">
                 <li>- Nome</li>
                 <li>- Plano escolhido</li>
-                <li>- Email para ativacao</li>
+                <li>- Email para ativação</li>
               </ul>
             </div>
           </div>

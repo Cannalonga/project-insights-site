@@ -3,9 +3,9 @@ import { landingAssets } from "@/lib/landing-assets";
 import { siteConfig } from "@/lib/site-config";
 
 const heroSignals = [
-  { value: "Clareza rapida", label: "para chegar na reuniao sabendo onde agir" },
-  { value: "Comparacao clara", label: "para mostrar o que mudou entre versoes" },
-  { value: "Uso profissional", label: "com demo e licenca completa" },
+  { value: "Clareza rápida", label: "para chegar na reunião sabendo onde agir" },
+  { value: "Comparação clara", label: "para mostrar o que mudou entre versões" },
+  { value: "Uso profissional", label: "com demo e licença completa" },
 ];
 
 export function HeroSection() {
@@ -29,16 +29,16 @@ export function HeroSection() {
             </p>
             <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--muted)] sm:text-[1.08rem]">
               O Project Insights transforma cronogramas em leitura executiva clara, mostra riscos reais, compara
-              versoes e leva voce direto para a decisao, sem navegar tarefa por tarefa.
+              versões e leva você direto para a decisão, sem navegar tarefa por tarefa.
             </p>
             <p className="mt-4 text-sm font-medium uppercase tracking-[0.18em] text-[var(--muted)]">
               Para engenheiros e planejadores de obra
             </p>
             <p className="mt-3 text-base font-medium text-[var(--foreground)]">
-              Leve uma decisao pronta para a reuniao em minutos
+              Leve uma decisão pronta para a reunião em minutos
             </p>
             <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-              Identifique atrasos, riscos e decisoes em segundos
+              Identifique atrasos, riscos e decisões em segundos
             </p>
 
             <div className="mt-3 grid gap-2 text-sm font-semibold sm:grid-cols-3">
@@ -60,7 +60,7 @@ export function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Baixar versao demo
+                Baixar versão demo
               </a>
               <a
                 href={siteConfig.buyUrl}
@@ -68,15 +68,15 @@ export function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Comprar licenca
+                Comprar licença
               </a>
             </div>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-[var(--muted)]">
-              Aplicativo leve, instalacao simples em poucos cliques.
+              Aplicativo leve, instalação simples em poucos cliques.
             </p>
 
             <p className="mt-5 max-w-2xl text-sm leading-6 text-[var(--muted)]">
-              Plano trimestral como entrada mais direta. Opcoes semestrais e anuais para quem quer mais continuidade.
+              Plano trimestral como entrada mais direta. Opções semestrais e anuais para quem quer mais continuidade.
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">

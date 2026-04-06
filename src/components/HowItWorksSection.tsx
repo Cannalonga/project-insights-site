@@ -5,11 +5,11 @@ const steps = [
   },
   {
     title: "Receba a leitura executiva",
-    description: "O Project Insights mostra status, risco, comparacao e onde agir com muito menos ruido.",
+    description: "O Project Insights mostra status, risco, comparação e onde agir com muito menos ruído.",
   },
   {
-    title: "Leve para a reuniao",
-    description: "Use a leitura para alinhar acao, prioridade e proximo passo com mais seguranca.",
+    title: "Leve para a reunião",
+    description: "Use a leitura para alinhar ação, prioridade e próximo passo com mais segurança.",
   },
 ];
 
@@ -19,7 +19,7 @@ export function HowItWorksSection() {
       <div className="section-card px-6 py-8 sm:px-8 lg:px-10">
         <p className="eyebrow">Como funciona</p>
         <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Tres passos para sair do arquivo e chegar na decisao.
+          Três passos para sair do arquivo e chegar na decisão.
         </h2>
 
         <div className="mt-10 grid gap-4 lg:grid-cols-3">
