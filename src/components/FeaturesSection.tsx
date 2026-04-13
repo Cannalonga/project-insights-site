@@ -1,11 +1,11 @@
 import { siteConfig } from "@/lib/site-config";
 
 const fullLicenseItems = [
-  "Acesso completo ao Project Insights",
-  "Leitura executiva de status, risco e evolucao",
+  "Leitura executiva de status, risco e prioridade",
+  "Identificacao de inconsistencias no cronograma",
+  "Avaliacao da confiabilidade da leitura",
   "Comparacao entre versoes do cronograma",
-  "Acao prioritaria destacada para decisao",
-  "Exportacao em PDF executivo",
+  "Exportacao em PDF executivo, JSON estruturado e CSV",
   "Uso local e offline",
 ];
 
@@ -104,13 +104,13 @@ export function FeatureSection() {
 
           <div className="mt-6 space-y-3">
             <div className="rounded-[1.25rem] border border-[rgba(49,95,132,0.12)] bg-[var(--analysis-soft)] px-4 py-4 text-[var(--analysis)]">
-              Clareza para decidir sem se perder no MPP
+              Clareza para decidir sem se perder no cronograma
             </div>
             <div className="rounded-[1.25rem] border border-[rgba(45,93,81,0.12)] bg-[var(--warm)] px-4 py-4 text-[var(--accent-strong)]">
               Leitura pronta para reuniao, alinhamento e acao
             </div>
             <div className="rounded-[1.25rem] border border-[var(--border)] bg-white/76 px-4 py-4 text-[var(--foreground)]">
-              Compra direta preparada para Mercado Pago por ciclo
+              Exportacao executiva e dados estruturados para uso tecnico
             </div>
           </div>
         </article>

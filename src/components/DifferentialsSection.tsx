@@ -1,20 +1,20 @@
-const beforeAfter = [
+const trustPoints = [
   {
-    title: "Antes",
-    tone: "muted",
+    title: "Quando a base sustenta leitura",
+    tone: "accent",
     items: [
-      "Abrir o MPP e tentar entender o cenário manualmente.",
-      "Montar a reunião com leitura espalhada em várias telas.",
-      "Perder tempo para descobrir risco, prioridade e próximo passo.",
+      "O sistema organiza risco, inconsistencias e prioridade em leitura executiva.",
+      "A saida pode seguir para PDF, JSON estruturado e CSV com contexto tecnico.",
+      "A decisao chega com mais clareza sobre o que agir primeiro.",
     ],
   },
   {
-    title: "Depois",
-    tone: "accent",
+    title: "Quando a base nao sustenta leitura confiavel",
+    tone: "muted",
     items: [
-      "Chegar na reunião com uma leitura clara de status, risco e prioridade.",
-      "Mostrar o que mudou entre versões sem interpretação demorada.",
-      "Saber onde agir com mais segurança.",
+      "O sistema nao inventa dados para completar o que o cronograma nao entrega.",
+      "Nao forca analise como se baseline, progresso ou consistencia existissem quando nao existem.",
+      "Nao mascara ausencia de informacao para parecer mais preciso do que realmente e.",
     ],
   },
 ];
@@ -24,17 +24,17 @@ export function DifferentialsSection() {
     <section id="antes-depois" className="section-shell py-24">
       <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
         <div className="max-w-xl">
-          <p className="eyebrow">Antes vs depois</p>
+          <p className="eyebrow">Confiabilidade</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">
-            O ganho não é só analisar. É decidir com clareza.
+            Nem todo cronograma sustenta uma analise confiavel
           </h2>
           <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-            O Project Insights reduz o tempo entre abrir o cronograma e entrar na reunião sabendo o que importa.
+            O diferencial do Project Insights nao e inventar seguranca. E mostrar com honestidade quando a leitura pode sustentar decisao e quando a base ainda esta fraca.
           </p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
-          {beforeAfter.map((column) => (
+          {trustPoints.map((column) => (
             <article
               key={column.title}
               className={`feature-card ${

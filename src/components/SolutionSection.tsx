@@ -1,8 +1,8 @@
 const solutions = [
   "Leitura executiva do cronograma com foco em status, risco e prioridade.",
-  "Comparação entre versões para mostrar o que mudou de verdade.",
-  "Direcionamento claro sobre onde agir primeiro.",
-  "PDF executivo pronto para reunião, alinhamento e registro.",
+  "Identificacao de inconsistencias que impactam a confiabilidade da leitura.",
+  "Comparacao entre versoes para mostrar o que mudou de verdade.",
+  "Saida executiva em PDF, JSON estruturado e CSV para BI.",
 ];
 
 export function SolutionSection() {
@@ -11,13 +11,13 @@ export function SolutionSection() {
       <div className="section-card px-6 py-8 sm:px-8 lg:px-10">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="max-w-xl">
-            <p className="eyebrow">A solução</p>
+            <p className="eyebrow">A solucao</p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-              O Project Insights transforma o cronograma em leitura clara para decisão.
+              O Project Insights transforma o cronograma em leitura clara para decisao.
             </h2>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-              Em vez de montar o entendimento manualmente, você carrega o MPP e recebe uma leitura pronta para reunião,
-              acompanhamento e ação.
+              Em vez de montar o entendimento manualmente, voce carrega o cronograma e recebe uma leitura pronta para reuniao,
+              acompanhamento e acao, sem confundir detalhe operacional com confiabilidade analitica.
             </p>
           </div>
 

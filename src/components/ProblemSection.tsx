@@ -1,8 +1,8 @@
 const painPoints = [
-  "Cronogramas MPP trazem muito detalhe e pouca clareza sobre o que realmente importa.",
-  "A reunião perde tempo quando o status depende de leitura manual e interpretação longa.",
-  "Risco e prioridade nem sempre ficam claros logo na primeira abertura do arquivo.",
-  "Comparar versões do projeto ainda costuma gerar dúvida sobre onde houve avanço ou parada.",
+  "O cronograma pode ter muito detalhe e pouca clareza sobre o que realmente importa para decidir.",
+  "A reuniao perde tempo quando o status depende de leitura manual, interpretacao longa e checagem de consistencia.",
+  "Nem todo cronograma sustenta uma leitura confiavel logo na primeira abertura do arquivo.",
+  "Comparar versoes ainda costuma gerar duvida sobre onde houve avanco, parada ou degradacao da base.",
 ];
 
 export function ProblemSection() {
@@ -12,11 +12,11 @@ export function ProblemSection() {
         <div className="max-w-xl">
           <p className="eyebrow">O problema</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-            O cronograma está ali. A clareza para decidir nem sempre.
+            O cronograma esta ali. A confiabilidade da leitura nem sempre.
           </h2>
           <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-            Quando tudo depende de abrir o MPP e navegar tarefa por tarefa, a decisão chega tarde. O que falta não é
-            dado. É leitura clara para saber onde agir.
+            Quando tudo depende de abrir o cronograma e navegar detalhe por detalhe, a decisao chega tarde. O que
+            falta nao e mais tela. E leitura executiva com contexto para saber onde agir e no que nao confiar.
           </p>
         </div>
 

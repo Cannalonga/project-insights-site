@@ -6,7 +6,7 @@ export function Footer() {
       <div className="flex flex-col gap-5 border-t border-black/8 py-8 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-semibold text-[var(--foreground)]">Project Insights</p>
-          <p className="mt-1">Leitura executiva de cronogramas MPP para decisão profissional.</p>
+          <p className="mt-1">Leitura executiva de cronogramas para decisao profissional.</p>
         </div>
         <div className="flex flex-col gap-2 text-left sm:items-end">
           <a href={`mailto:${siteConfig.supportEmail}`} className="hover:text-[var(--foreground)]">

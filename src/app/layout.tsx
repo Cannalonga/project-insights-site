@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Project Insights | Leitura executiva de cronogramas MPP",
+  title: "Project Insights | Leitura executiva de cronogramas",
   description:
-    "Transforme cronogramas MPP em leitura executiva clara, acionável e pronta para decisão com o Project Insights.",
+    "Importe cronogramas do MS Project e Primavera P6, avalie inconsistencias e confiabilidade e gere saida executiva pronta para decisao.",
 };
 
 export default function RootLayout({

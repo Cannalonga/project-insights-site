@@ -3,9 +3,9 @@ import { landingAssets } from "@/lib/landing-assets";
 import { siteConfig } from "@/lib/site-config";
 
 const heroSignals = [
-  { value: "Clareza rápida", label: "para chegar na reunião sabendo onde agir" },
-  { value: "Comparação clara", label: "para mostrar o que mudou entre versões" },
-  { value: "Uso profissional", label: "com demo e licença completa" },
+  { value: "Confiabilidade", label: "para saber quando a leitura sustenta decisao" },
+  { value: "Inconsistencias", label: "para identificar problemas reais no cronograma" },
+  { value: "Saida executiva", label: "com PDF, JSON estruturado e CSV" },
 ];
 
 export function HeroSection() {
@@ -18,27 +18,24 @@ export function HeroSection() {
         <div className="relative grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
           <div className="max-w-3xl">
             <div className="inline-flex items-center rounded-full border border-[rgba(45,93,81,0.14)] bg-white/80 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--muted)] shadow-[0_8px_18px_rgba(15,32,28,0.05)]">
-              Desktop offline para leitura executiva de cronogramas MPP
+              Desktop offline para leitura executiva de cronogramas
             </div>
 
             <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-[-0.045em] text-[var(--foreground)] sm:text-5xl lg:text-[4.4rem] lg:leading-[0.96]">
-              LEITURA EXECUTIVA DE CRONOGRAMAS MPP
+              Leitura executiva de cronogramas para tomada de decisao
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)] sm:text-[1.15rem]">
-              Pare de abrir o MPP para tentar descobrir sozinho onde o projeto travou.
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--muted)] sm:text-[1.08rem]">
+              Importe arquivos do MS Project (.mpp) e Oracle Primavera P6 (.xer), identifique inconsistencias, avalie
+              a confiabilidade e gere saida executiva pronta para reuniao.
             </p>
-            <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--muted)] sm:text-[1.08rem]">
-              O Project Insights transforma cronogramas em leitura executiva clara, mostra riscos reais, compara
-              versões e leva você direto para a decisão, sem navegar tarefa por tarefa.
+            <p className="mt-4 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
+              Compativel com MS Project e Primavera P6
             </p>
             <p className="mt-4 text-sm font-medium uppercase tracking-[0.18em] text-[var(--muted)]">
               Para engenheiros e planejadores de obra
             </p>
             <p className="mt-3 text-base font-medium text-[var(--foreground)]">
-              Leve uma decisão pronta para a reunião em minutos
-            </p>
-            <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-              Identifique atrasos, riscos e decisões em segundos
+              Leitura pronta para reuniao com foco em risco, consistencia e decisao
             </p>
 
             <div className="mt-3 grid gap-2 text-sm font-semibold sm:grid-cols-3">
@@ -60,7 +57,7 @@ export function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Baixar versão demo
+                Baixar versao demo
               </a>
               <a
                 href={siteConfig.buyUrl}
@@ -68,15 +65,15 @@ export function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Comprar licença
+                Comprar licenca
               </a>
             </div>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-[var(--muted)]">
-              Aplicativo leve, instalação simples em poucos cliques.
+              Aplicativo leve, instalacao simples em poucos cliques.
             </p>
 
             <p className="mt-5 max-w-2xl text-sm leading-6 text-[var(--muted)]">
-              Plano trimestral como entrada mais direta. Opções semestrais e anuais para quem quer mais continuidade.
+              Plano trimestral como entrada mais direta. Opcoes semestrais e anuais para quem quer mais continuidade de uso.
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
@@ -120,20 +117,20 @@ export function HeroSection() {
               <div className="mt-4 grid gap-3 sm:grid-cols-3">
                 <div className="rounded-2xl border border-[rgba(21,44,38,0.06)] bg-white p-4 shadow-[0_10px_20px_rgba(15,32,28,0.04)]">
                   <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Problema</p>
-                  <p className="mt-2 text-base font-semibold">Onde o projeto pede acao</p>
+                  <p className="mt-2 text-base font-semibold">Onde o cronograma pede acao</p>
                 </div>
                 <div className="rounded-2xl border border-[rgba(21,44,38,0.06)] bg-white p-4 shadow-[0_10px_20px_rgba(15,32,28,0.04)]">
-                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Evolucao</p>
-                  <p className="mt-2 text-base font-semibold">O que mudou entre versoes</p>
+                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Confianca</p>
+                  <p className="mt-2 text-base font-semibold">O que a base sustenta de verdade</p>
                 </div>
                 <div className="rounded-2xl border border-[rgba(21,44,38,0.06)] bg-white p-4 shadow-[0_10px_20px_rgba(15,32,28,0.04)]">
                   <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Saida</p>
-                  <p className="mt-2 text-base font-semibold">PDF executivo pronto para compartilhar</p>
+                  <p className="mt-2 text-base font-semibold">PDF, JSON estruturado e CSV</p>
                 </div>
               </div>
 
               <div className="mt-4 rounded-2xl border border-[rgba(45,93,81,0.08)] bg-[var(--warm)] p-4 text-sm leading-6 text-[var(--foreground)]">
-                A demo mostra a leitura acontecendo. A licenca completa leva essa clareza para a reuniao e para a decisao.
+                A demo mostra a leitura acontecendo. A licenca completa amplia a leitura executiva, a exportacao e a confianca para reunioes tecnicas.
               </div>
             </div>
           </div>
