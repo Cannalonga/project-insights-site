@@ -3,18 +3,18 @@ const trustPoints = [
     title: "Quando a base sustenta leitura",
     tone: "accent",
     items: [
-      "O sistema organiza risco, inconsistencias e prioridade em leitura executiva.",
-      "A saida pode seguir para PDF, JSON estruturado e CSV com contexto tecnico.",
-      "A decisao chega com mais clareza sobre o que agir primeiro.",
+      "O sistema organiza risco, inconsistências e prioridade em leitura executiva.",
+      "A saída pode seguir para PDF, JSON estruturado e CSV com contexto técnico.",
+      "A decisão chega com mais clareza sobre o que agir primeiro.",
     ],
   },
   {
-    title: "Quando a base nao sustenta leitura confiavel",
+    title: "Quando a base não sustenta leitura confiável",
     tone: "muted",
     items: [
-      "O sistema nao inventa dados para completar o que o cronograma nao entrega.",
-      "Nao forca analise como se baseline, progresso ou consistencia existissem quando nao existem.",
-      "Nao mascara ausencia de informacao para parecer mais preciso do que realmente e.",
+      "O sistema não inventa dados para completar o que o cronograma não entrega.",
+      "Não força análise como se baseline, progresso ou consistência existissem quando não existem.",
+      "Não mascara ausência de informação para parecer mais preciso do que realmente é.",
     ],
   },
 ];
@@ -26,10 +26,11 @@ export function DifferentialsSection() {
         <div className="max-w-xl">
           <p className="eyebrow">Confiabilidade</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">
-            Nem todo cronograma sustenta uma analise confiavel
+            Nem todo cronograma sustenta uma análise confiável
           </h2>
           <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-            O diferencial do Project Insights nao e inventar seguranca. E mostrar com honestidade quando a leitura pode sustentar decisao e quando a base ainda esta fraca.
+            O diferencial do Project Insights não é inventar segurança. É mostrar com honestidade quando a leitura pode
+            sustentar decisão e quando a base ainda está fraca.
           </p>
         </div>
 

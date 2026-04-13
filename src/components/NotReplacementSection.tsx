@@ -1,8 +1,8 @@
 const boundaries = [
-  "Nao e ferramenta de planejamento",
-  "Nao substitui MS Project ou Primavera",
-  "Nao substitui BI",
-  "Nao inventa dados",
+  "Não é ferramenta de planejamento",
+  "Não substitui MS Project ou Primavera",
+  "Não substitui BI",
+  "Não inventa dados",
 ];
 
 export function NotReplacementSection() {
@@ -11,12 +11,12 @@ export function NotReplacementSection() {
       <div className="section-card px-6 py-8 sm:px-8 lg:px-10">
         <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
           <div className="max-w-xl">
-            <p className="eyebrow">O que nao e</p>
+            <p className="eyebrow">O que não é</p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
               Posicionamento claro para uso profissional
             </h2>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-              O Project Insights entra depois do cronograma pronto, para leitura executiva, consistencia e decisao.
+              O Project Insights entra depois do cronograma pronto, para leitura executiva, consistência e decisão.
             </p>
           </div>
 

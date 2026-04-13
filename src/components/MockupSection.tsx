@@ -58,7 +58,7 @@ export function MockupSection() {
               <div className="mt-5 overflow-hidden rounded-[1.5rem] border border-[var(--border)] bg-white">
                 <LandingImage
                   src={landingAssets.attentionPreview}
-                  alt="Tela do Project Insights destacando tarefas que pedem atencao"
+                  alt="Tela do Project Insights destacando tarefas que pedem atenção"
                   className="aspect-[16/10] w-full"
                 />
               </div>
@@ -73,7 +73,7 @@ export function MockupSection() {
               <div className="mt-5 overflow-hidden rounded-[1.5rem] border border-[rgba(49,95,132,0.12)] bg-white">
                 <LandingImage
                   src={landingAssets.decisionPreview}
-                  alt="Tela do Project Insights destacando as tres principais decisoes"
+                  alt="Tela do Project Insights destacando as tres principais decisões"
                   className="aspect-[16/10] w-full"
                 />
               </div>
@@ -88,7 +88,7 @@ export function MockupSection() {
               <div className="mt-5 overflow-hidden rounded-[1.5rem] border border-[rgba(45,93,81,0.12)] bg-white">
                 <LandingImage
                   src={landingAssets.recoveryPreview}
-                  alt="Tela do Project Insights mostrando capacidade de recuperacao do cronograma"
+                  alt="Tela do Project Insights mostrando capacidade de recuperação do cronograma"
                   className="aspect-[16/10] w-full"
                 />
               </div>

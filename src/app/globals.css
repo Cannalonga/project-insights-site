@@ -3,11 +3,12 @@
 :root {
   --background: #f3f1e8;
   --foreground: #152c26;
-  --muted: #576964;
-  --card: rgba(255, 255, 255, 0.82);
-  --border: rgba(21, 44, 38, 0.1);
-  --accent: #2d5d51;
-  --accent-strong: #183f37;
+  --muted: #526560;
+  --card: rgba(255, 255, 255, 0.86);
+  --border: rgba(21, 44, 38, 0.12);
+  --accent: #215f57;
+  --accent-strong: #0f433e;
+  --accent-emphasis: #0c7a6b;
   --analysis: #315f84;
   --analysis-soft: #e8f0f7;
   --soft: #e7efe7;
@@ -61,19 +62,19 @@ button {
 }
 
 .section-card {
-  @apply rounded-[2rem] border border-[var(--border)] bg-[var(--card)] shadow-[0_20px_55px_rgba(15,32,28,0.08)] backdrop-blur-xl;
+  @apply rounded-[2rem] border border-[var(--border)] bg-[var(--card)] shadow-[0_24px_65px_rgba(15,32,28,0.1)] backdrop-blur-xl;
 }
 
 .primary-button {
-  @apply inline-flex items-center justify-center rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_34px_rgba(24,63,55,0.24)] hover:-translate-y-0.5 hover:bg-[var(--accent-strong)] hover:shadow-[0_18px_40px_rgba(24,63,55,0.28)];
+  @apply inline-flex items-center justify-center rounded-full border border-[rgba(12,122,107,0.22)] bg-[var(--accent-emphasis)] px-6 py-3 text-sm font-semibold text-white shadow-[0_18px_42px_rgba(12,122,107,0.26)] hover:-translate-y-0.5 hover:bg-[var(--accent-strong)] hover:shadow-[0_22px_48px_rgba(15,67,62,0.32)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(12,122,107,0.35)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] active:translate-y-0 active:shadow-[0_12px_26px_rgba(15,67,62,0.22)];
 }
 
 .secondary-button {
-  @apply inline-flex items-center justify-center rounded-full border border-[rgba(21,44,38,0.12)] bg-[rgba(255,255,255,0.76)] px-6 py-3 text-sm font-semibold text-[var(--foreground)] shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] hover:-translate-y-0.5 hover:border-[rgba(45,93,81,0.28)] hover:bg-white hover:shadow-[0_10px_24px_rgba(15,32,28,0.08)];
+  @apply inline-flex items-center justify-center rounded-full border border-[rgba(21,44,38,0.18)] bg-[rgba(255,255,255,0.9)] px-6 py-3 text-sm font-semibold text-[var(--foreground)] shadow-[0_10px_24px_rgba(15,32,28,0.08)] hover:-translate-y-0.5 hover:border-[rgba(12,122,107,0.3)] hover:bg-white hover:shadow-[0_16px_32px_rgba(15,32,28,0.12)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(12,122,107,0.25)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] active:translate-y-0 active:shadow-[0_8px_18px_rgba(15,32,28,0.08)];
 }
 
 .feature-card {
-  @apply rounded-[1.75rem] border border-[var(--border)] bg-[rgba(255,255,255,0.8)] p-6 shadow-[0_16px_36px_rgba(15,32,28,0.055)] hover:-translate-y-1 hover:shadow-[0_24px_44px_rgba(15,32,28,0.08)];
+  @apply rounded-[1.75rem] border border-[rgba(21,44,38,0.12)] bg-[rgba(255,255,255,0.88)] p-6 shadow-[0_18px_40px_rgba(15,32,28,0.075)] hover:-translate-y-1 hover:shadow-[0_26px_50px_rgba(15,32,28,0.1)];
 }
 
 .mock-panel {
