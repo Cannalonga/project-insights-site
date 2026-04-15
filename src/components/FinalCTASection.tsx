@@ -4,7 +4,7 @@ const planCards = [
   {
     title: "Trimestral",
     price: "R$297",
-    description: "Ideal para começar rápido e validar o uso no ritmo real da obra.",
+    description: "Ideal após teste inicial.",
     cta: "Comprar trimestral",
     href: siteConfig.plans.trimestral.buyUrl,
     tone: "primary",
@@ -13,7 +13,7 @@ const planCards = [
   {
     title: "Semestral",
     price: "R$537",
-    description: "Mais continuidade para acompanhar ciclos com mais previsibilidade.",
+    description: "Para quem já validou e quer acompanhar evolução.",
     cta: "Comprar semestral",
     href: siteConfig.plans.semestral.buyUrl,
     tone: "recommended",
@@ -22,7 +22,7 @@ const planCards = [
   {
     title: "Anual",
     price: "R$997",
-    description: "Melhor custo para quem já decidiu incorporar a leitura executiva à rotina.",
+    description: "Para uso contínuo na operação.",
     cta: "Comprar anual",
     href: siteConfig.plans.anual.buyUrl,
     tone: "premium",
@@ -43,6 +43,9 @@ export function FinalCTASection() {
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
               Baixe a demo ou avance direto para a licença completa. Escolha o ciclo que melhor acompanha sua operação e
               finalize a compra pelo plano desejado.
+            </p>
+            <p className="mt-4 text-sm leading-6 text-[var(--muted)]">
+              Também é possível validar com um cronograma real antes da contratação.
             </p>
 
             <div className="mt-6 grid gap-3 text-base text-[var(--foreground)]">

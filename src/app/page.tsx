@@ -11,6 +11,7 @@ import { NotReplacementSection } from "@/components/NotReplacementSection";
 import { ProblemSection } from "@/components/ProblemSection";
 import { SolutionSection } from "@/components/SolutionSection";
 import { StructuredDataSection } from "@/components/StructuredDataSection";
+import { ValidationBeforePurchaseSection } from "@/components/ValidationBeforePurchaseSection";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <FeatureSection />
         <StructuredDataSection />
         <NotReplacementSection />
+        <ValidationBeforePurchaseSection />
         <FinalCTASection />
       </main>
       <Footer />
