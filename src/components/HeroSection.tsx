@@ -25,19 +25,35 @@ export function HeroSection() {
               Leitura executiva de cronogramas para{" "}
               <span className="text-[var(--accent-emphasis)]">tomada de decisão</span>
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--muted)] sm:text-[1.08rem]">
-              Importe arquivos do MS Project (.mpp) e Oracle Primavera P6 (.xer), identifique inconsistências, avalie
-              a confiabilidade e gere saída executiva pronta para reunião.
-            </p>
-            <p className="mt-4 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
-              Compatível com MS Project e Primavera P6
-            </p>
-            <p className="mt-4 text-sm font-medium uppercase tracking-[0.18em] text-[var(--muted)]">
-              Para engenheiros e planejadores de obra
-            </p>
-            <p className="mt-3 max-w-2xl text-base font-semibold text-[var(--foreground)]">
-              Entenda rápido onde agir, no que confiar e o que levar para a reunião.
-            </p>
+            <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(260px,320px)] lg:items-start">
+              <div>
+                <p className="max-w-3xl text-lg leading-8 text-[var(--muted)] sm:text-[1.08rem]">
+                  Importe arquivos do MS Project (.mpp) e Oracle Primavera P6 (.xer), identifique inconsistências,
+                  avalie a confiabilidade e gere saída executiva pronta para reunião.
+                </p>
+                <p className="mt-4 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
+                  Compatível com MS Project e Primavera P6
+                </p>
+                <p className="mt-4 text-sm font-medium uppercase tracking-[0.18em] text-[var(--muted)]">
+                  Para engenheiros e planejadores de obra
+                </p>
+                <p className="mt-3 max-w-2xl text-base font-semibold text-[var(--foreground)]">
+                  Entenda rápido onde agir, no que confiar e o que levar para a reunião.
+                </p>
+              </div>
+
+              <div className="overflow-hidden rounded-[1.6rem] border border-[rgba(21,44,38,0.1)] bg-white/88 shadow-[0_18px_34px_rgba(15,32,28,0.08)]">
+                <LandingImage
+                  src={landingAssets.mppIllustration}
+                  alt="Exemplo ilustrativo de cronograma no MS Project"
+                  className="aspect-[16/10] w-full"
+                  imageClassName="object-contain bg-white"
+                />
+                <p className="border-t border-[rgba(21,44,38,0.08)] px-4 py-3 text-xs font-medium uppercase tracking-[0.16em] text-[var(--muted)]">
+                  Exemplo ilustrativo de cronograma (MS Project)
+                </p>
+              </div>
+            </div>
 
             <div className="mt-4 grid gap-2 text-sm font-semibold sm:grid-cols-3">
               <div className="rounded-[1rem] border border-[rgba(12,122,107,0.18)] bg-[rgba(237,247,245,0.98)] px-4 py-3 text-[var(--accent-strong)] shadow-[0_10px_22px_rgba(12,122,107,0.08)]">

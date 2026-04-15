@@ -1,3 +1,5 @@
+import { LandingImage } from "@/components/LandingImage";
+import { landingAssets } from "@/lib/landing-assets";
 import { siteConfig } from "@/lib/site-config";
 
 export function ValidationBeforePurchaseSection() {
@@ -16,6 +18,23 @@ export function ValidationBeforePurchaseSection() {
             <p className="mt-4 text-base leading-7 text-[var(--muted)]">
               Envie um cronograma e eu faço uma análise real para você.
             </p>
+
+            <div className="mt-8 overflow-hidden rounded-[1.7rem] border border-[rgba(21,44,38,0.1)] bg-white/88 shadow-[0_18px_34px_rgba(15,32,28,0.08)]">
+              <LandingImage
+                src={landingAssets.mppIllustration}
+                alt="Exemplo ilustrativo de cronograma no MS Project"
+                className="aspect-[16/10] w-full"
+                imageClassName="object-contain bg-white"
+              />
+              <div className="border-t border-[rgba(21,44,38,0.08)] px-4 py-3">
+                <p className="text-xs font-medium uppercase tracking-[0.16em] text-[var(--muted)]">
+                  Exemplo ilustrativo de cronograma (MS Project)
+                </p>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                  Visual familiar para quem já trabalha com cronogramas no MS Project.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="grid gap-4">
@@ -29,26 +48,45 @@ export function ValidationBeforePurchaseSection() {
               </ul>
             </article>
 
-            <article className="rounded-[1.7rem] border border-[rgba(49,95,132,0.14)] bg-[rgba(232,240,247,0.72)] p-6 shadow-[0_16px_30px_rgba(49,95,132,0.06)]">
-              <p className="text-base leading-7 text-[var(--foreground)]">Sem compromisso.</p>
+            <article className="rounded-[1.9rem] border border-[rgba(12,122,107,0.22)] bg-[linear-gradient(180deg,rgba(241,249,245,0.98),rgba(255,255,255,0.94))] p-7 shadow-[0_22px_42px_rgba(12,122,107,0.12)]">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent-strong)]">
+                Teste gratuito
+              </p>
+              <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-[var(--foreground)]">
+                Valide sem compromisso
+              </h3>
               <p className="mt-3 text-base leading-7 text-[var(--muted)]">
                 Se fizer sentido, você segue. Se não fizer, já sai com um diagnóstico.
               </p>
-              <div className="mt-5 rounded-[1.2rem] border border-[rgba(12,122,107,0.14)] bg-[rgba(255,255,255,0.72)] p-4">
-                <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent-strong)]">
-                  <span aria-hidden="true">🔒</span>
-                  Seus dados são tratados com segurança
+              <div className="mt-6 rounded-[1.6rem] border border-[rgba(12,122,107,0.18)] bg-[linear-gradient(135deg,rgba(232,247,242,0.98),rgba(241,248,253,0.96))] p-6 shadow-[0_18px_34px_rgba(12,122,107,0.1)]">
+                <p className="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent-strong)]">
+                  <span
+                    aria-hidden="true"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[rgba(12,122,107,0.16)] bg-white/88 text-lg shadow-[0_10px_20px_rgba(12,122,107,0.12)]"
+                  >
+                    🔒
+                  </span>
+                  Segurança dos dados
                 </p>
-                <ul className="mt-3 space-y-2 text-sm leading-6 text-[var(--muted)]">
-                  <li>- o cronograma é usado apenas para a análise solicitada</li>
-                  <li>- nenhum dado é armazenado ou compartilhado</li>
-                  <li>- os arquivos são descartados após o uso</li>
+                <h4 className="mt-4 text-2xl font-semibold tracking-[-0.03em] text-[var(--foreground)]">
+                  Seus dados estão protegidos
+                </h4>
+                <ul className="mt-4 space-y-3 text-base leading-7 text-[var(--foreground)]">
+                  <li className="rounded-[1rem] border border-[rgba(12,122,107,0.1)] bg-white/72 px-4 py-3">
+                    O cronograma é usado apenas para a análise solicitada.
+                  </li>
+                  <li className="rounded-[1rem] border border-[rgba(12,122,107,0.1)] bg-white/72 px-4 py-3">
+                    Nenhum dado é armazenado ou compartilhado.
+                  </li>
+                  <li className="rounded-[1rem] border border-[rgba(12,122,107,0.1)] bg-white/72 px-4 py-3">
+                    Os arquivos são descartados após o uso.
+                  </li>
                 </ul>
               </div>
-              <p className="mt-5 text-sm font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">Contato</p>
+              <p className="mt-6 text-sm font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">Contato</p>
               <a
                 href={`mailto:${siteConfig.supportEmail}`}
-                className="mt-2 inline-flex text-base font-medium text-[var(--accent-strong)] hover:text-[var(--foreground)]"
+                className="mt-2 inline-flex rounded-full border border-[rgba(12,122,107,0.16)] bg-white/86 px-4 py-2 text-base font-medium text-[var(--accent-strong)] shadow-[0_10px_20px_rgba(12,122,107,0.08)] hover:text-[var(--foreground)]"
               >
                 {siteConfig.supportEmail}
               </a>

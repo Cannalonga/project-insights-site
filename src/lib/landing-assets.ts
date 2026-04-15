@@ -1,4 +1,5 @@
 export const landingAssets = {
+  mppIllustration: "/landing/ms-project-real.png",
   heroPreview: "/landing/capacidade-recuperacao.jpg",
   alertsPreview: "/landing/alertas-inteligentes.jpg",
   recoveryPreview: "/landing/capacidade-recuperacao.jpg",
