@@ -2,9 +2,9 @@ import { siteConfig } from "@/lib/site-config";
 
 const navItems = [
   { label: "Problema", href: "#problema" },
-  { label: "Solução", href: "#solucao" },
+  { label: "Compatibilidade", href: "#compatibilidade" },
   { label: "Demonstração", href: "#demonstracao" },
-  { label: "Como funciona", href: "#como-funciona" },
+  { label: "Confiabilidade", href: "#antes-depois" },
   { label: "Licença", href: "#oferta" },
 ];
 
