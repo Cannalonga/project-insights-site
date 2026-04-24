@@ -3,9 +3,8 @@ const trustPoints = [
     title: "Quando a base sustenta leitura",
     tone: "accent",
     items: [
-      "O sistema organiza risco, inconsistências e prioridade em leitura executiva.",
+      "Organiza status, risco e prioridade em leitura executiva.",
       "A saída pode seguir para PDF, JSON estruturado e CSV com contexto técnico.",
-      "A decisão chega com mais clareza sobre o que agir primeiro.",
     ],
   },
   {
@@ -13,7 +12,6 @@ const trustPoints = [
     tone: "muted",
     items: [
       "O sistema não inventa dados para completar o que o cronograma não entrega.",
-      "Não força análise como se baseline, progresso ou consistência existissem quando não existem.",
       "Não mascara ausência de informação para parecer mais preciso do que realmente é.",
     ],
   },

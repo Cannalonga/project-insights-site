@@ -1,8 +1,7 @@
 const painPoints = [
-  "O cronograma pode ter muito detalhe e pouca clareza sobre o que realmente importa para decidir.",
-  "A reunião perde tempo quando o status depende de leitura manual, interpretação longa e checagem de consistência.",
-  "Nem todo cronograma sustenta uma leitura confiável logo na primeira abertura do arquivo.",
-  "Comparar versões ainda costuma gerar dúvida sobre onde houve avanço, parada ou degradação da base.",
+  "Muito detalhe e pouca clareza sobre o que realmente pede atenção.",
+  "A leitura manual consome tempo antes mesmo da reunião começar.",
+  "Comparar versões ainda gera dúvida sobre avanço, parada ou degradação.",
 ];
 
 export function ProblemSection() {
@@ -15,14 +14,14 @@ export function ProblemSection() {
             O cronograma está ali. A confiabilidade da leitura nem sempre.
           </h2>
           <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-            Quando tudo depende de abrir o cronograma e navegar detalhe por detalhe, a decisão chega tarde. O que
-            falta não é mais tela. É leitura executiva com contexto para saber onde agir e no que não confiar.
+            Quando a decisão depende de navegação manual, ela chega mais tarde do que deveria. O que falta não é mais
+            tela. É leitura executiva com contexto para saber onde agir e no que não confiar.
           </p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-3">
           {painPoints.map((item) => (
-            <article key={item} className="feature-card min-h-[190px]">
+            <article key={item} className="feature-card min-h-[170px]">
               <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[var(--warm)] text-sm font-semibold text-[var(--accent-strong)]">
                 !
               </div>

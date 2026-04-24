@@ -8,18 +8,18 @@ export function MockupSection() {
         <div className="max-w-2xl">
           <p className="eyebrow">Demonstração</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">
-            A demo mostra valor logo na primeira leitura.
+            A demo mostra valor sem exigir esforço.
           </h2>
           <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-            Cada tela prova um tipo de valor: clareza, risco, prioridade, comparação e capacidade de recuperação. A
-            imagem faz o trabalho pesado. O texto só orienta o olhar.
+            Uma imagem principal, duas provas complementares e texto curto. O objetivo é mostrar leitura, risco e
+            prioridade mais rápido.
           </p>
           <p className="mt-4 text-sm font-medium text-[var(--foreground)]">
             Validado com cronogramas reais de obra e uso em campo
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">
+        <div className="mt-10 grid gap-5 xl:grid-cols-[1.08fr_0.92fr]">
           <div className="rounded-[2rem] border border-[var(--border)] bg-[linear-gradient(180deg,rgba(251,252,248,0.98),rgba(244,247,240,0.92))] p-5 shadow-[0_22px_54px_rgba(19,37,32,0.08)]">
             <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Leitura executiva</p>
             <h3 className="mt-3 text-2xl font-semibold">Status, risco e prioridade em uma única visão.</h3>
@@ -35,20 +35,20 @@ export function MockupSection() {
               />
             </div>
 
-            <div className="mt-5 rounded-[1.4rem] border border-[rgba(49,95,132,0.12)] bg-white/88 p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Alertas inteligentes</p>
-              <p className="mt-2 text-lg font-semibold">Risco visível antes da reunião.</p>
-              <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                Veja onde o cronograma pressiona e leve a conversa direto para o ponto crítico.
-              </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              <div className="rounded-[1.25rem] border border-[rgba(21,44,38,0.12)] bg-white/92 p-4 shadow-[0_12px_24px_rgba(15,32,28,0.05)]">
+                <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Ação</p>
+                <p className="mt-2 text-sm font-semibold leading-6">Onde o cronograma pede atenção</p>
+              </div>
+              <div className="rounded-[1.25rem] border border-[rgba(12,122,107,0.14)] bg-[rgba(245,251,249,0.98)] p-4 shadow-[0_12px_24px_rgba(12,122,107,0.06)]">
+                <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Confiança</p>
+                <p className="mt-2 text-sm font-semibold leading-6">O que a base sustenta de verdade</p>
+              </div>
+              <div className="rounded-[1.25rem] border border-[rgba(49,95,132,0.14)] bg-[rgba(247,250,253,0.98)] p-4 shadow-[0_12px_24px_rgba(49,95,132,0.06)]">
+                <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Saída</p>
+                <p className="mt-2 text-sm font-semibold leading-6">PDF, JSON estruturado e CSV</p>
+              </div>
             </div>
-
-            <LandingImage
-              src={landingAssets.alertsPreview}
-              alt="Tela do Project Insights com alertas e leitura executiva do cronograma"
-              className="mt-4 overflow-hidden rounded-[1.5rem] border border-[var(--border)] shadow-[0_18px_36px_rgba(15,32,28,0.08)]"
-              imageClassName="object-top"
-            />
           </div>
 
           <div className="grid gap-4">
@@ -57,8 +57,8 @@ export function MockupSection() {
               <h3 className="mt-4 text-xl font-semibold">Fica claro onde o cronograma está pressionando.</h3>
               <div className="mt-5 overflow-hidden rounded-[1.5rem] border border-[var(--border)] bg-white">
                 <LandingImage
-                  src={landingAssets.attentionPreview}
-                  alt="Tela do Project Insights destacando tarefas que pedem atenção"
+                  src={landingAssets.alertsPreview}
+                  alt="Tela do Project Insights com alertas e leitura executiva do cronograma"
                   className="aspect-[16/10] w-full"
                 />
               </div>
@@ -79,21 +79,6 @@ export function MockupSection() {
               </div>
               <p className="mt-4 text-sm leading-6 text-[var(--muted)]">
                 O app encurta o caminho entre análise e ação, sem conversa dispersa.
-              </p>
-            </div>
-
-            <div className="mock-panel">
-              <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Capacidade de recuperação</p>
-              <h3 className="mt-4 text-xl font-semibold">Você entende se ainda há espaço para reagir.</h3>
-              <div className="mt-5 overflow-hidden rounded-[1.5rem] border border-[rgba(45,93,81,0.12)] bg-white">
-                <LandingImage
-                  src={landingAssets.recoveryPreview}
-                  alt="Tela do Project Insights mostrando capacidade de recuperação do cronograma"
-                  className="aspect-[16/10] w-full"
-                />
-              </div>
-              <p className="mt-4 text-sm leading-6 text-[var(--muted)]">
-                A comparação deixa mais fácil enxergar margem de reação antes que o risco vire fato.
               </p>
             </div>
           </div>

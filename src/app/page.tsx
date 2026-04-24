@@ -1,13 +1,11 @@
 import { CompatibilitySection } from "@/components/CompatibilitySection";
 import { DifferentialsSection } from "@/components/DifferentialsSection";
-import { FeatureSection } from "@/components/FeaturesSection";
 import { FinalCTASection } from "@/components/FinalCTASection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { MockupSection } from "@/components/MockupSection";
 import { ProblemSection } from "@/components/ProblemSection";
-import { SolutionSection } from "@/components/SolutionSection";
 
 export default function Home() {
   return (
@@ -17,10 +15,8 @@ export default function Home() {
         <HeroSection />
         <CompatibilitySection />
         <ProblemSection />
-        <SolutionSection />
         <MockupSection />
         <DifferentialsSection />
-        <FeatureSection />
         <FinalCTASection />
       </main>
       <Footer />
