@@ -5,13 +5,9 @@ import { FinalCTASection } from "@/components/FinalCTASection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
-import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { MockupSection } from "@/components/MockupSection";
-import { NotReplacementSection } from "@/components/NotReplacementSection";
 import { ProblemSection } from "@/components/ProblemSection";
 import { SolutionSection } from "@/components/SolutionSection";
-import { StructuredDataSection } from "@/components/StructuredDataSection";
-import { ValidationBeforePurchaseSection } from "@/components/ValidationBeforePurchaseSection";
 
 export default function Home() {
   return (
@@ -19,16 +15,12 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <ProblemSection />
         <CompatibilitySection />
+        <ProblemSection />
         <SolutionSection />
         <MockupSection />
         <DifferentialsSection />
-        <HowItWorksSection />
         <FeatureSection />
-        <StructuredDataSection />
-        <NotReplacementSection />
-        <ValidationBeforePurchaseSection />
         <FinalCTASection />
       </main>
       <Footer />
